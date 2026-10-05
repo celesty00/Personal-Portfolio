@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celesty Shahi | Personal Portfolio</title>
+    <meta name="description" content="Personal portfolio of Celesty Shahi, a student interested in software development and web technologies.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1>Celesty Shahi</h1>
+            <p class="tagline">Student | Aspiring Software Developer</p>
+
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="about" class="section about-section">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        Hello! My name is Celesty Shahi. I am a student
+                        interested in software development and web
+                        technologies. I enjoy learning new skills and
+                        creating useful websites. My goal is to improve
+                        my programming knowledge and become a skilled
+                        software developer.
+                    </p>
+                </div>
+
+                <img
+                    src="celestyimg.jpeg"
+                    alt="Portrait of Celesty Shahi"
+                    class="profile-image"
+                    width="220"
+                    height="220">
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
+            <p>
+                I am developing my technical skills through coursework
+                and practical projects.
+            </p>
+
+            <dl class="skills-list">
+                <div class="skill-item">
+                    <dt>HTML5</dt>
+                    <dd>Creating structured web pages using semantic HTML.</dd>
+                </div>
+
+                <div class="skill-item">
+                    <dt>CSS3</dt>
+                    <dd>Designing attractive and responsive websites.</dd>
+                </div>
+
+                <div class="skill-item">
+                    <dt>JavaScript</dt>
+                    <dd>Learning programming and interactive web features.</dd>
+                </div>
+
+                <div class="skill-item">
+                    <dt>Problem Solving</dt>
+                    <dd>Learning to analyze problems and develop solutions.</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+            <p>Here are some examples of my web development projects.</p>
+
+            <div class="project-list">
+
+                <article class="project-card">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>
+                        A personal website that introduces me, displays
+                        my skills, and presents my projects. It uses
+                        semantic HTML5 and responsive CSS.
+                    </p>
+                    <a href="https://github.com/YOUR-USERNAME"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View GitHub Profile
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Nailholic Appointment System</h3>
+                    <p>
+                        Nailholic is a nail salon appointment booking
+                        system concept. It helps clients explore nail
+                        designs, view services, and book appointments.
+                    </p>
+                    <a href="https://github.com/YOUR-USERNAME"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View GitHub Profile
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>
+                If you would like to contact me, please complete
+                the form below.
+            </p>
+
+            <form class="contact-form" action="#contact" method="get">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="Enter the subject"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message"
+                        required></textarea>
+                </div>
+
+                <button type="submit">Submit Message</button>
+            </form>
+            <p class="form-note">
+                Note: This demonstration form does not send messages
+                to an email account.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Celesty Shahi. All rights reserved.</p>
+            <p>Personal Portfolio Website</p>
+        </div>
+    </footer>
+
+</body>
+</html>

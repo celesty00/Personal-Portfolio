@@ -1,0 +1,285 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #30263a;
+    background-color: #fff8fc;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+/* Header and navigation */
+.site-header {
+    background: linear-gradient(135deg, #7b2f77, #c65d91);
+    color: white;
+    padding: 35px 0 25px;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.tagline {
+    margin: 5px 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background-color: #ffffff35;
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+/* Main sections */
+.section {
+    margin: 30px 0;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #f0dce9;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px #54204d0d;
+    scroll-margin-top: 20px;
+}
+
+.section h2 {
+    color: #8d347b;
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.profile-image {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f4c6df;
+}
+
+/* Skills */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin: 20px 0 0;
+}
+
+.skill-item {
+    padding: 18px;
+    background-color: #fff1f8;
+    border-left: 4px solid #bd5796;
+    border-radius: 8px;
+}
+
+.skill-item dt {
+    color: #842e75;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.skill-item dd {
+    margin: 5px 0 0;
+}
+
+/* Projects */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    padding: 22px;
+    background-color: #fff5fa;
+    border: 1px solid #efd2e3;
+    border-radius: 12px;
+}
+
+.project-card h3 {
+    color: #8d347b;
+    margin-top: 0;
+}
+
+.project-card a {
+    color: #8d347b;
+    font-weight: bold;
+    text-underline-offset: 4px;
+}
+
+.project-card a:hover {
+    color: #c03f7c;
+}
+
+/* Contact form */
+.contact-form {
+    max-width: 650px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font: inherit;
+    color: #30263a;
+    background-color: #fffafd;
+    border: 1px solid #d9bfd0;
+    border-radius: 8px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid #a7448b;
+    outline-offset: 2px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #8d347b;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #67235d;
+}
+
+button:focus-visible {
+    outline: 3px solid #c65d91;
+    outline-offset: 3px;
+}
+
+.form-note {
+    color: #6d5b6a;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+.site-footer {
+    margin-top: 40px;
+    padding: 25px 0;
+    text-align: center;
+    background-color: #38263c;
+    color: white;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+/* Responsive layout for tablets and phones */
+@media (max-width: 700px) {
+    .site-header h1 {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 170px;
+        height: 170px;
+    }
+
+    .skills-list,
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 22px;
+        margin: 20px 0;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+    }
+}
+
+/* Extra-small screens */
+@media (max-width: 400px) {
+    .container {
+        width: 94%;
+    }
+
+    .site-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .section {
+        padding: 16px;
+    }
+}
